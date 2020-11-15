@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="top-card d-flex flex-row">
+            <img src="https://www.edutech.com/tools/img/Edutech_Social_Share.jpg" class="image" />
+            <div class="d-flex flex-row justify-content-center">
+                <button class="button"> Live sessions</button>
+                <button class="button"> Courses</button>
+                <button class="button">Login</button>
+            </div>
+        </div>
+        <div class="card1 d-flex flex-row">
+            <div class="card-container">
+                <h1 class="card1-heading"> Welcome to World of Learning </h1>
+                <p class="card1-paragraph"> Learning is the Eye of Mind</p>
+                <button class="btn btn-info"> Start Now</button>
+            </div>
+            <div d-flex flex-row justify-content-left>
+                <img src="https://news.cgtn.com/news/7867444e78516a4e3441544d3259544d7849444f31457a6333566d54/img/5635e83a0d77472c94da051b3089307a/5635e83a0d77472c94da051b3089307a.jpg" class="card1-image" />
+            </div>
+        </div>
+        <div class="card2 d-flex flex-column">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.insidehighered.com/sites/default/server_files/media/iStock-520374378.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://miro.medium.com/max/10000/1*mH69eMuM2YeG-MY4BoygLg.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://previews.123rf.com/images/venimo/venimo1502/venimo150200017/36392394-vector-e-learning-and-education-app-on-the-screen-of-mobile-phone-illustration-in-flat-style.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="card2-container">
+                <ul>
+                    <li>Upgrade & Enrich your skills</li>
+                    <li> Enhancing the placement opportunities </li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="mainheading"> About Us</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="card3-container card3-container1">
+                <img src="data:image/jpeg;base64,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" class="card3-image" />
+                <h1 class="heading">25+ years </h1>
+                <p class="card2-paragraph">Experience</p>
+            </div>
+            <div class="card3-container card3-container2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLf_Bo5L190JNMqWyDowndUb6eCRswBI_Flg&usqp=CAU" class="card3-image" />
+                <h1 class="heading">30+ years</h1>
+                <p class="card2-paragraph">Training in Summer Tech camps</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="card4-container card3-container1">
+                <img src="https://thumbs.dreamstime.com/b/school-building-cartoon-facade-against-backdrop-city-landscape-elementary-vector-illustration-161289864.jpg" class="card3-image" />
+                <h1 class="heading">1000+</h1>
+                <p class="card2-paragraph"> Schools across India</p>
+            </div>
+            <div class="card4-container card3-container1">
+                <img src="https://www.degreequery.com/wp-content/uploads/2015/12/college-degree.jpg" class="card3-image" />
+                <h1 class="heading">500+</h1>
+                <p class="card2-paragraph"> College Graduates & Universities </p>
+            </div>
+            <div class="card4-container card3-container1">
+                <img src="https://www.refinitiv.com/content/dam/marketing/en_us/images/photography/18656753.jpeg/adobestock_179290678.jpeg.transform/rect-825/q82/image.jpg" class="card3-image" />
+                <h1 class="heading">100+</h1>
+                <p class="card2-paragraph"> Corporate IT comapanies </p>
+            </div>
+            <div class="card4-container card3-container1">
+                <img src="https://mk0digitallearn7ttjx.kinstacdn.com/wp-content/uploads/2018/03/Tinkering-Lab.jpg" class="card3-image" />
+                <h1 class="heading">Tinkering Labs</h1>
+                <p class="card2-paragraph"> Electronics,Mechanical,Robotics,Electrical labs </p>
+            </div>
+        </div>
+        <h1 class="mainheading">Courses Offered</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="Card5 card5-container">
+                <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/09/4pune-jee-main-results-decla-1599551417.jpg" class="card3-image" />
+                <h1 class="heading">JEE mains</h1>
+                <p class="card2-paragraph">Clear explanation of content</p>
+            </div>
+            <div class="Card5 card5-container">
+                <img src="https://eduswami.com/wp-content/uploads/2019/12/Neet-Image-1-818x490.jpg" class="card3-image" />
+                <h1 class="heading">NEET </h1>
+                <p class="card2-paragraph">From Droppers to Doctors</p>
+            </div>
+            <div class="Card5 card5-container">
+                <img src="https://www.careerindiainfo.in/wp-content/uploads/2019/05/gateexam-1280x720.jpg" class="card3-image" />
+                <h1 class="heading">GATE</h1>
+                <p class="card2-paragraph">Choose your success path</p>
+            </div>
+            <div class="Card5 card5-container">
+                <img src="https://mpng.subpng.com/20180331/puq/kisspng-university-of-lagos-ahmadu-bello-university-univer-diploma-5abf718a4ff608.9888912715224958823275.jpg" class="card3-image" />
+                <h1 class="heading">PG</h1>
+                <p class="card2-paragraph">Earn a Master Degree</p>
+            </div>
+        </div>
+        <h1 class="mainheading"> Bibliography</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="Card5 card6-container">
+                <img src="https://mk0digitallearn7ttjx.kinstacdn.com/wp-content/uploads/2020/05/NCERT-curriculum.jpg" class="card3-image" />
+                <p class="card2-paragraph">Learning is a Life long process </p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://gnindia.dronacharya.info/KnowledgePartner/img1/thumbs/NPTEL.png" class="card3-image" />
+                <h1 class="heading">NPTEL</h1>
+                <p class="card2-paragraph">E-Learning courses through Web</p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://i.pcmag.com/imagery/reviews/07AxdIVbQ63OEkJoPgCybXt-19.1594914797.fit_scale.size_1028x578.png" class="card3-image" />
+                <h1 class="heading">Khan Academy</h1>
+                <p class="card2-paragraph">Non Profitable education</p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://cdn.vox-cdn.com/thumbor/KoKtgbchYTUIdvfO491alJT3Tqs=/44x0:596x368/1200x800/filters:focal(44x0:596x368)/cdn.vox-cdn.com/assets/1094556/edx.png" class="card3-image" />
+                <h1 class="heading">Harvard & MIT</h1>
+                <p class="card2-paragraph">Built in demand skills</p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397190317/713f3108c94a135503dce9eb67053713.png" class="card3-image" />
+                <h1 class="heading">Class central</h1>
+                <p class="card2-paragraph">Never Stop learning</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="Card5 card6-container">
+                <img src="https://image.shutterstock.com/image-vector/creative-hand-drawn-vector-maths-260nw-461085109.jpg" class="card3-image" />
+                <h1 class="heading">Maths</h1>
+                <p class="card2-paragraph">Understanding</p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://media4.s-nbcnews.com/i/newscms/2018_22/2451826/180601-atomi-mn-1540_f415a90a9f0fcbddc7dfa4cc7b5a36c3.jpg" class="card3-image" />
+                <h1 class="heading">Physics</h1>
+                <p class="card2-paragraph">Experimenting </p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://icon2.cleanpng.com/20180226/fyq/kisspng-student-light-educational-technology-learning-element-bulb-5a94af89d69564.5259967815196937058789.jpg" class="card3-image" />
+                <h1 class="heading">Aptitude</h1>
+                <p class="card2-paragraph">Analytical Reasoning</p>
+            </div>
+            <div class="Card5 card6-container">
+                <img src="https://static.toiimg.com/thumb/msid-76215139,width-1200,height-900,resizemode-4/.jpg" class="card3-image" />
+                <h1 class="heading">UPSC</h1>
+                <p class="card2-paragraph">Civil Services</p>
+            </div>
+        </div>
+        <h1 class="mainheading"> About our Expert Mentors </h1>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="card7-container d-flex flex-row justify-content-center">
+                <img src="https://www.orionedutech.com/img/directors/director2.jpg" class="card7-image" />
+                <div class="card7">
+                    <h1 class="heading1">Manish Agarwal</h1>
+                    <p>Co-Founder/Director of Edutech</p>
+                </div>
+            </div>
+            <div class="card7-container d-flex flex-row justify-content-center">
+                <img src="https://www.orionedutech.com/img/directors/director1.jpg" class="card7-image" />
+                <div class="card7">
+                    <h1 class="heading1">Sanjeev Kothari</h1>
+                    <p>Co-Founder/Director of Edutech</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="mainheading">Students Review On Edutech Learning Course</h1>
+        <div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://previews.123rf.com/images/jemastock/jemastock1705/jemastock170505303/77848244-portrait-character-business-man-with-suit-outline-vector-illustration.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heading2">"An opportunity if not Grabbed turns in to Regret"</h5>
+                            <p>I worked at Edutech full-time for more than a year.Excellent teamwork and communication skills</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://previews.123rf.com/images/jemastock/jemastock1705/jemastock170505303/77848244-portrait-character-business-man-with-suit-outline-vector-illustration.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heading2">"Software developer"</h5>
+                            <p>I worked at Edutech full-time for more than 3 years.Fantastic company.
+                                Edutech provides opportunities for career growth everyday.Friendly work atmosphere. Great place to work. I guess,
+                                over 70% employees are over 5 years with the company. Freedom to work and perform with a flat organizational structure,
+                                friendly and professional colleagues and management team. Great place to make money especially in sales, reasonably good pay
+                                format with aggressive variable pay and incentives.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://previews.123rf.com/images/jemastock/jemastock1705/jemastock170505303/77848244-portrait-character-business-man-with-suit-outline-vector-illustration.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="heading2">"A unique company, a great place for performers looking for work life balance."</h5>
+                            <p>I worked at Edutech full-time for more than 5 years.Supports employees committed to growth of the organization,
+                                I see few of the negative comments here from disgruntled ex employees who had to leave the organization for performance
+                                issues and who miss the life here. There are lot of employees who stay long term with the organization, I have got every thing promised to me perhaps with few months delay. Exposure to
+                                international training and travels for sales and support team</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <h1 class="mainheading">Quick Links</h1>
+        <div class="bottom-card d-flex flex-row justify-content-center">
+            <div class="bottom-container">
+                <img src="https://pbs.twimg.com/profile_images/1308010958862905345/-SGZioPb_400x400.jpg" class="image-bottom" />
+                <h1 class="heading-bottom"> Twitter</h1>
+            </div>
+            <div class="bottom-container">
+                <img src="https://www.cbronline.com/wp-content/uploads/2016/06/linkedin.jpg" class="image-bottom" />
+                <h1 class="heading-bottom">Linkedin</h1>
+            </div>
+            <div class="bottom-container">
+                <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" class="image-bottom" />
+                <h1 class="heading-bottom">Github</h1>
+            </div>
+            <div class="bottom-container">
+                <img src="https://pbs.twimg.com/media/EfTLNitXsAIGUuB.png" class="image-bottom" />
+                <h1 class="heading-bottom">Youtube</h1>
+            </div>
+        </div>
+        <div class="bottom-card d-flex flex-row justify-content-center">
+            <button class="btn btn-primary">Subscribe Us</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
